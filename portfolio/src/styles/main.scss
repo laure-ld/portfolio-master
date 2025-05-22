@@ -80,9 +80,9 @@
         border-radius: 50%;
         width: 250px;
         height: 250px;
-        background-image: url('../../public/lune.jpg');
+        background-color: $accent-color;
     }
-    .circle {
+    .circle { 
         position: absolute;
         border: 2px solid $text-color;
         border-radius: 50%;

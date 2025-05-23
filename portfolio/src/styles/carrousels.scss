@@ -1,0 +1,42 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 3rem auto;
+    text-align: center;
+  
+    .carousel-slide {
+      padding: 1rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+  
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+  
+    .controls {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+  
+      button {
+        background: $accent-color;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background: darken($accent-color, 10%);
+        }
+      }
+    }
+  }
+  

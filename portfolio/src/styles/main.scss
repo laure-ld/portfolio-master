@@ -43,7 +43,7 @@
             .button-container {
                 border: 2px solid $accent-color;
                 height: 4rem;
-                width: 6rem;
+                width: 11rem;
                 border-radius: 25px;
                 box-shadow: -2px 3px 1px 0px rgba(121,121,121,0.78);
                 display: flex;
@@ -76,29 +76,41 @@
 
     .circle-1 {
         position: absolute;
+        z-index: 2;
         border: 2px solid $accent-color;
         border-radius: 50%;
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
         background-color: $accent-color;
+        box-shadow: 0 0 20px rgba($accent-color, 0.5);
+        transition: width 1.2s ease-in-out, height 1.2s ease-in-out, box-shadow 1.2s ease-in-out;
+      
+        &:hover {
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 0 30px rgba($accent-color, 0.8);
+        }
     }
-    .circle { 
+    .circle {
         position: absolute;
-        border: 2px solid $text-color;
+        z-index: 1;
+        border: 1px solid $text-color;
         border-radius: 50%;
-        animation: rotateReverse 10s linear infinite;
-
+        animation: pulse 10s ease-in-out infinite;
+      
         &:nth-child(2) {
-            width: 400px;
-            animation-duration: 30s;
+          width: 250px;
+          height: 400px;
+          animation-duration: 14s;
         }
-
+      
         &:nth-child(3) {
-            width: 480px;
-            animation-duration: 32s;
+          width: 250px;
+          height:360px;
+          animation-duration: 18s;
         }
     }
-
+    
     .menu-word {
         font-size: 24px;
         font-weight: bold;
@@ -109,16 +121,19 @@
 
     // Animations
 
-@keyframes rotateReverse {
-    0% {
-        transform: rotate(190deg);
-    }
-    50% {
-        transform: rotate(220deg);
-    }
-    100% {
-        transform: rotate(190deg);
-    }
+@keyframes pulse {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1) rotate(180deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 0.3;
+  }
 }
 
  // Responsive About 

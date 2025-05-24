@@ -6,36 +6,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; // important pour éviter les hauteurs 0
+  height: 100%;
 }
 
 .slider-container {
-  width: 50%;
   display: flex;
   flex-direction: column;
-  .slick-slide {
-    margin: 0 10px;
+  position: relative;
+  overflow: overlay;
+  margin: 0 auto;
+  max-width: 1200px;
+  
+  .slick-slider {
     transition: transform 0.3s ease;
     div {
-      background: #fff;
-      border-radius: 12px;
       padding: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       text-align: center;
 
       img {
-        width: 100%;
-        height: auto;
+        width: 60%;
+        height: 80%;
         object-fit: cover;
         border-radius: 8px;
         margin-top: 1rem;
         transition: transform 0.5s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
 
       h3 {
         font-size: 1.2rem;
-        margin: 0;
-        color: #333;
+        text-align: center;
       }
 
       &:hover {
@@ -52,6 +52,7 @@
       margin: 0 5px;
 
       button {
+        border: none;
         &:before {
           font-size: 10px;
           color: #888;

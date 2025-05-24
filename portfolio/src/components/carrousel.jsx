@@ -6,7 +6,6 @@ import "../styles/carrousels.scss";
 function Carrousels() {
   const settings = {
     className: "slider variable-width",
-    dots: true,
     infinite: true,
     centerMode: true,
     slidesToShow: 1,

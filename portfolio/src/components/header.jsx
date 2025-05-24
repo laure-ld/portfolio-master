@@ -29,7 +29,7 @@ function Header () {
                 <ul>
                     <li><a href="#projets">Projets</a></li>
                     <li><a href="#competence">Compétences</a></li>
-                    <li><a href="#soft">Soft skills</a></li>
+                    <li><a href="#soft">Soft-skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#rs">Réseaux</a></li>
                 </ul>

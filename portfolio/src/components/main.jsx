@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import About from "./about";
-import Carrousel from "./projects";
+import Carrousel from "./carrousel";
 import Skills from "./skills";
 import data from "../data-projects.json";
 import ContactForm from "./contact";

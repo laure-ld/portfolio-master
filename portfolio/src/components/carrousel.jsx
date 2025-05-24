@@ -1,39 +1,31 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import projects from "../data/projects";
-import '../styles/carrousels.scss';
+import React from "react";
+import Slider from "react-slick";
+import data from "../data/projects.json";
+import "../styles/carrousels.scss";
 
-function Carousel() {
-  const [index, setIndex] = useState(0);
-
-  const paginate = (direction) => {
-    const newIndex = (index + direction + projects.length) % projects.length;
-    setIndex(newIndex);
+function Carrousels() {
+  const settings = {
+    className: "slider variable-width",
+    dots: true,
+    infinite: true,
+    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true
   };
 
   return (
-    <div className="carousel">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={index}
-          className="carousel-slide"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
-        >
-          <img src={projects[index].image} alt={projects[index].title} />
-          <h3>{projects[index].title}</h3>
-          <p>{projects[index].description}</p>
-        </motion.div>
-      </AnimatePresence>
-
-      <div className="controls">
-        <button onClick={() => paginate(-1)}>←</button>
-        <button onClick={() => paginate(1)}>→</button>
-      </div>
+    <div className="slider-container">
+      <Slider {...settings}>
+      {data.map((project, index) => (
+        <div key={index} className="slide">
+          <img src={project.image} alt={`${project.name} image`} />
+          <h3>{project.name}</h3>
+        </div>
+      ))}
+      </Slider>
     </div>
   );
 }
 
-export default Carousel;
+export default Carrousels;

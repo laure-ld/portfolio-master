@@ -4,6 +4,22 @@ $accent-color: #1C3D5A;
 $box-color : #F1F1F3;
 $hover-color: darken($accent-color, 10%);
 
+/* Gestion du scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 4px;
+  }
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+
 body {
     background-color: $primary-color;
     color: $primary-color;
@@ -47,7 +63,7 @@ a, li {
     font-size: 20px ;
 }
 
-// responsie 
+// responsive 
 
 @media screen and (max-width: 760px) {
     h1 {

@@ -147,10 +147,24 @@
 }
 @media screen and (max-width: 768px) {
     .about-me {
-        padding: 75px 2rem;
+        padding: 20px 2rem;
         margin: 0;
-
+        align-items: start;
+        justify-content: space-around;
         .about-content {
+            .buttons {
+                margin: 1rem 0;
+                .button-container {
+                    height: 3rem;
+                    width: 9rem;
+                    a {
+                        font-size: 0.8rem;
+                    }
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
             gap: 0;
             h1 {
                 font-size: 3rem;
@@ -161,17 +175,23 @@
             }
         }
         .animation {
+            width: 70%;
+            opacity: 0.8;
+            .menu-right-animation {
+                justify-content: flex-end;
             .circle-1 {
-                height: 200px;
-                width: 200px;
+                height: 100px;
+                width: 100px;
             }
             .circle:nth-child(2) {
-                width: 260px;
+                width: 110px;
+                height: 200px;
             }
             .circle:nth-child(3) {
-                width: 310px;
+                width: 115px;
+                height: 235px;
             }
-        }
+        }}
     }
 }
 @media screen and (max-width: 767px) {
@@ -179,14 +199,16 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
-                justify-content: center;
+        justify-content: center;
         
         .about-content {
+            p {
+                margin: 10px 0;
+            }
             .buttons {
                 margin: 1rem 0;
                 gap: 2rem;
                 justify-content: center;
-
                 .button-container {
                     height: 3rem;
                     width: 8rem;
@@ -208,202 +230,16 @@
     }
 }
 
-// Carrousel 
-.slide-container {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.8s ease-in-out;
-    display: flex;
-    align-items: flex-start;
-
-    p, li {
-        font-size: 18px;
-    }
-
-    .date {
-        font-size: 15px;
-    }
-
-    .objectif {
-        padding: 40px 0;
-        font-size: 20px;
-        text-align: left;
-    }
-    .tech {
-        display: flex;
-        gap: 25px;
-
-        .tech-title {
-            font-size: 20px;
-        }
-    }
-    .slide-image {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transition: width 1s ease-in-out, left 1s ease-in-out;
-        object-fit: contain;
-    }
-
-    .slide-info {
-        position: absolute;
-        opacity: 0;
-        transform: translateX(50%);
-        transition: opacity 1s ease-in-out;
-        flex-direction: column;
-        min-width: 35%;
-        ul {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 0;
-            padding: 0;
-        }
-    }
-
-    &.full {
-        transform: scale(1);
-        .slide-image {
-            max-height: 100%; 
-            left: 50%;
-            transform: translateX(-50%); 
-            width: 100%;
-        }
-
-        .slide-info {
-            opacity: 0;
-            transform: translateX(100%);
-        }
-    }
-
-    &.split {
-        .slide-image {
-            width: 50%;
-            left: 3rem;
-        }
-
-        .slide-info {
-            opacity: 1;
-            transform: translateX(0);
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            width: 35%;
-            right: 5rem;
-            text-align: center;
-            background: $primary-color;
-            padding: 20px;
-        }
-    }
-}
-
-    // responsive carrousel
-@media screen and (max-width: 1024px) {
-    .slide-container{
-        &.split {
-            .slide-image {
-                width: 40%;
-                height: 75%;
-            }
-        }
-    }
-}
-@media screen and (max-width: 768px) {
-    .slide-container{
-        height: 400px;
-        &.split {
-            .slide-image {
-                width: 40%;
-                height: 75%;
-            }
-            .slide-info {
-                width: 38%;
-                padding: 0;
-                align-items: center;
-                .objectif {
-                    font-size: 18px;
-                }
-                .tech {
-                    text-align: left;
-                    .tech-title {
-                        font-size: 18px;
-                    }
-                }
-                ul {
-                    gap: 5px;
-                    li {
-                    font-size: 15px;
-                    }
-                }
-            }
-        }
-    }  
-}
-@media screen and (max-width: 767px) {
-    .slide-container{
-        height: 300px;
-        .date {
-            font-size: 12px;
-        }
-        .objectif{
-            font-size: 15px;
-            padding: 25px 0;
-        }
-        .tech {
-            width: 100%;
-            gap: 20px;
-            .tech-title {
-                font-size: 15px;
-            }
-        }
-        &.split {
-            .slide-image {
-                display: none;
-            }
-        
-            .slide-info {
-                width: auto;
-                right: 0;
-                margin: 0 3rem;
-                padding: 30px 0;
-                transform: translateX(100px);  
-                opacity: 0; 
-                animation: slideIn 0.8s ease-in-out 1.5s forwards; 
-        
-                ul {
-                    gap: 5px;
-                    li {
-                        font-size: 12px;
-                    }
-                }
-            }
-        }
-        
-        @keyframes slideIn {
-            0% {
-                transform: translateX(100px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        
-    } 
-}
 // Skills
 .skill-container {
     margin: 1rem 0;
-    gap: 50px;
+    gap: 4rem;
     display: flex;
     flex-direction: column;
     text-align: center;
 
     .skill {
-        padding-top: 50px;
+        padding-top: 7rem;
         .cards-skills {
             border: 1px solid $accent-color;
             opacity: 0.5;
@@ -540,7 +376,7 @@
     .skill-container {
         margin: 1rem 2rem;
         .cards-skills {
-            margin-top: 5px;
+            font-size: 9px;
         }
         .skill { 
             padding: 0;
@@ -549,16 +385,23 @@
             width: 50%;
             margin: 2rem 0;
             }
+            h2 {
+                font-size: 1.5rem;
+            }
         }   
         .softSkill {
             display: block;
             h2 {
                 margin-bottom: 20px;
+                font-size: 1.5rem;
             }
             .box {
                 width: auto;
                 margin-bottom: 30px;
                 gap: 30px; 
+                h3 {
+                    font-size: 1.2rem;
+                }
                 ul {
                     gap: 30px;
                     li {
@@ -568,14 +411,15 @@
             }
         }
         .learn-skills {
+            h2 {
+                font-size: 1.5rem;
+                margin: 0;
+            }
             .skill-circle {
                 width: 150px;
                 height: 150px;
-                ul {
-                    gap: 30px;
-                    li {
-                    font-size: 15px;
-                    }
+                p {
+                    font-size: 19px;
                 }
             }
         }
@@ -626,7 +470,7 @@
         }
     }
 }}
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .skill-container {
         .softSkill {
             .learn-skills {
@@ -634,8 +478,9 @@
                     margin: 0;
                     margin-top: 0;
                     li {
-                        width: 80px;
-                        height: 80px;
+                        width: 85px;
+                        height: 85px;
+                        justify-content: center;
                         p {
                             font-size: 0.8rem;
                         }
@@ -740,5 +585,11 @@ textarea {
         align-items: center;
         justify-content: center;
       }
+}
+
+@media screen and (max-width: 780px){
+    .contenair-main .back-to-top {
+        display: none;
+    }
 }
   

@@ -7,7 +7,7 @@ $hover-color: darken($accent-color, 10%);
 /* Gestion du scroll bar */
 ::-webkit-scrollbar {
     width: 5px;
-    height: 5px;
+    height: 1px;
   }
   
 ::-webkit-scrollbar-thumb {
@@ -37,7 +37,7 @@ h1{
 h2 {
     color: $text-color;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Playfair Display";
     font-size: 2rem;
     font-weight: 500;
 }

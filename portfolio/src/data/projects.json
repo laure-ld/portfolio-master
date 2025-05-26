@@ -43,5 +43,25 @@
       "competences": ["Compréhension et manipulation du DOM", "Interaction avec une API et gestion des requêtes HTTP"],
       "description": "J’ai développé la page web dynamique d’une architecte d’intérieur en JavaScript, en intégrant une API pour afficher ses travaux. J’ai manipulé le DOM pour gérer les interactions et créé une page de connexion avec une modale d’upload de médias, le tout codé from scratch.",
       "retour_experience": "Ce projet m’a appris à gérer le JavaScript sans framework. La manipulation du DOM s’est faite naturellement, mais la gestion d’API m’a demandé plus de rigueur. Aujourd’hui, je miserais sur l’optimisation des médias (format WebP) et un meilleur SEO."
-    }
+    },
+    {
+      "id": 4,
+      "image": "/images/bot-0.png",
+      "projet": ["/images/bot-1.webp", "/images/bot-2.webp", "/images/bot-3.webp", "/images/bot-4.webp"],
+      "date": "Mai 2025",
+      "titre": "Bot Telegram de veille technologique intelligent",
+      "github": "https://github.com/laure-ld/bot_telegram.git",
+      "objectif": "Développer un bot Telegram en Python pour automatiser la veille technologique via API et stockage PostgreSQL.",
+      "technologie": ["Python", "API", "PostgreSQL", "Flask", "Scheduler (Cron)", "Telegram Bot API"],
+      "stack_affichage": "Python – Flask – API – PostgreSQL – Cron",
+      "impact_utilisateur": "Les utilisateurs peuvent interagir avec le bot pour rechercher, sauvegarder ou supprimer des articles pertinents. Un résumé quotidien automatisé leur est envoyé, facilitant une veille technologique efficace sans effort.",
+      "competences": [
+        "Initiation de projet from scratch en Python",
+        "Création et gestion d’une base de données PostgreSQL",
+        "Utilisation d’API publiques et de web scraping",
+        "Automatisation des tâches avec planification (cron)"
+      ],
+      "description": "Ce bot Telegram facilite la veille technologique quotidienne. Il récupère des articles via API, permet leur sauvegarde dans une base PostgreSQL, et envoie un résumé chaque jour. L’interface Telegram permet une interaction simple (recherche, sauvegarde, suppression). Le projet a été pensé avec une logique modulaire, documenté sur Trello et développé en autonomie avec Flask.",
+      "retour_experience": "Ce projet m’a permis de sortir de ma zone de confort, d’apprendre Python en profondeur, de concevoir un système complet avec persistance des données, et de comprendre la planification de tâches asynchrones. J’ai apprécié la clarté de Python et la puissance de PostgreSQL. Aujourd’hui, je souhaite continuer à développer des outils utiles avec des stacks Python orientés production."
+    }    
 ]  

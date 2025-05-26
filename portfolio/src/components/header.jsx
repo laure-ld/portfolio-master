@@ -27,7 +27,7 @@ function Header () {
             )}
             <nav id="menu" className={`menu ${isOpen ? 'open' : ''}`} onClick={handleOnClick} alt="menu deroulant">
                 <ul>
-                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#carrousel">Projets</a></li>
                     <li><a href="#competence">Compétences</a></li>
                     <li><a href="#soft">Soft-skills</a></li>
                     <li><a href="#contact">Contact</a></li>

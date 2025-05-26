@@ -9,7 +9,8 @@ function Header () {
     function handleOnClick() {
         setIsOpen(!isOpen);
     }
-    const showMenu = location.pathname === "/main";
+    const showMenu = location.pathname === "/" || location.pathname === "/main";
+
 
     return (
         <section className="container">

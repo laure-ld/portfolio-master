@@ -95,8 +95,12 @@
     .projet {
         .projet-detail{
             flex-direction: column;
-            margin: 50px;
+            margin: 0 50px 50px;
             gap: 30px;
+            .mySecondSwiper {
+                width: 200px;
+                height: 300px;
+            }
             .infoProjet {
                 padding: 0;
                 h2 {
@@ -116,6 +120,7 @@
             flex-direction: column;
             margin: 0;
             padding-top: 3rem;
+
             .mySecondSwiper {
             width: 200px;
             height: 200px;
@@ -127,13 +132,18 @@
                     text-align: center;
                 }
                 li, p {
-                    font-size: 1rem;
-                    line-height: 30px;
+                    font-size: 12px;
+                    line-height: 20px;
                 }
             }
         }
         .detailProjet {
             padding: 30px 2rem;
+            line-height: 20px;
+            p {
+                letter-spacing: 0;
+                font-size: 12px;
+            }
         }
     }
 }

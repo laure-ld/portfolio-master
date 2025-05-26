@@ -69,6 +69,13 @@
   }
 }
 
+@media screen and (max-width: 400) {
+  .slick-prev,
+  .slick-next {
+    left: 0px;
+  }
+}
+
 /* ========== POINTS / BULLETS ========== */
 .slick-dots {
   display: flex;

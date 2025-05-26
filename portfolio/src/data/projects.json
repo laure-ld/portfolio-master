@@ -42,6 +42,6 @@
       "impact_utilisateur": "Les utilisateurs peuvent consulter les projets d’une architecte d’intérieur et uploader de nouveaux médias.",
       "competences": ["Compréhension et manipulation du DOM", "Interaction avec une API et gestion des requêtes HTTP"],
       "description": "J’ai développé la page web dynamique d’une architecte d’intérieur en JavaScript, en intégrant une API pour afficher ses travaux. J’ai manipulé le DOM pour gérer les interactions et créé une page de connexion avec une modale d’upload de médias, le tout codé from scratch.",
-      "retour_experience": "Ce projet m’a appris à gérer le JavaScript pur sans framework. La manipulation du DOM s’est faite naturellement, mais la gestion d’API m’a demandé plus de rigueur. Aujourd’hui, je miserais sur l’optimisation des médias (format WebP) et un meilleur SEO."
+      "retour_experience": "Ce projet m’a appris à gérer le JavaScript sans framework. La manipulation du DOM s’est faite naturellement, mais la gestion d’API m’a demandé plus de rigueur. Aujourd’hui, je miserais sur l’optimisation des médias (format WebP) et un meilleur SEO."
     }
 ]  

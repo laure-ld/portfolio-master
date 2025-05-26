@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import data from "../data-projects.json";
+import data from "../data/projects.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper/modules";
 
@@ -32,7 +32,7 @@ const ProjetDetail = () => {
                     ))}
                 </Swiper>
                 <div className="infoProjet">
-                    <h2>{projet.name}</h2>
+                    <h2>{projet.titre}</h2>
                     <p><strong>Objectif : </strong> {projet.objectif}</p>
                     <div className="tech">
                         <p><strong>Technologie : </strong></p>
@@ -49,6 +49,10 @@ const ProjetDetail = () => {
                                 <li key={index}>&#9205; {competence}</li>
                             ))}
                         </ul>
+                    </div>
+                    <div className="utlisateur">
+                        <p><strong>Impact pour l'utilisateur </strong></p>
+                        <p>{projet.impact_utilisateur}</p>
                     </div>
                 </div>
             </div>

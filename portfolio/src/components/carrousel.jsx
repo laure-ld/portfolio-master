@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import data from "../data/projects.json";
 import "../styles/carrousels.scss";
+import  { Link } from 'react-router-dom';
 
 function PrevArrow({ className, onClick }) {
   return (
@@ -32,12 +33,14 @@ function Carrousels() {
   };
 
   return (
-    <div className="slider-container">
+    <div className="slider-container" id="carrousel">
       <Slider {...settings}>
         {data.map((project, index) => (
           <div key={index} className="slide">
-            <img src={project.image} alt={`${project.name} image`} />
-            <h3>{project.name}</h3>
+            <Link to={`/projets/${project.id}`} title={`Voir le projet : ${project.titre}`}>
+              <img src={project.image} alt={`${project.titre} image`}/>
+              <h3>{project.titre}</h3>
+            </Link>
           </div>
         ))}
       </Slider>

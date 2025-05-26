@@ -33,7 +33,7 @@ export default function ContactForm() {
           <input type="file" name="fichier" className="w-full" />
         </div>
   
-        <input type="hidden" name="_next" value="https://tonportfolio.com/merci" />
+        <input type="hidden" name="_next" value="https://portfolio-master-brown-eight.vercel.app/" />
         <button type="submit" className="buttonSubmit">Envoyer</button>
       </form>
     );

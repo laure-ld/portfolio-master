@@ -25,6 +25,7 @@ function Header () {
                         </svg>
                 </button>
             )}
+            {showMenu && (
             <nav id="menu" className={`menu ${isOpen ? 'open' : ''}`} onClick={handleOnClick} alt="menu deroulant">
                 <ul>
                     <li><a href="#carrousel">Projets</a></li>
@@ -34,6 +35,7 @@ function Header () {
                     <li><a href="#rs">Réseaux</a></li>
                 </ul>
             </nav>
+            )}
         </section>
     )
 }

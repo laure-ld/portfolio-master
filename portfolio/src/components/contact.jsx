@@ -32,7 +32,7 @@ export default function ContactForm() {
           <label>Pièce jointe</label>
           <input type="file" name="fichier" className="w-full" />
         </div>
-  
+        <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="https://portfolio-master-dun.vercel.app/" />
         <button type="submit" className="buttonSubmit">Envoyer</button>
       </form>

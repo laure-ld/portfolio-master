@@ -1,0 +1,64 @@
+# Portfolio - Laure Ld
+
+Bienvenue sur mon portfolio de développeuse web
+Ce site me permet de présenter mes projets, mon parcours, mes compétences techniques, ainsi qu'un moyen direct de me contacter.
+
+[Voir le site en ligne](https://portfolio-master-dun.vercel.app)
+
+---
+
+## Objectifs du projet
+
+- Créer un portfolio responsive, clair et moderne
+- Mettre en valeur mes projets réalisés (perso et pro)
+- Offrir un accès rapide à mes compétences, mes réseaux et mon contact
+- Avoir un projet propre à intégrer à mes candidatures et à mon LinkedIn
+
+---
+
+## Stack technique
+
+- **Frontend :**
+  - React (Vite)
+  - HTML5 / SCSS
+  - JavaScript ES6+
+
+- **Outils externes :**
+  - FormSubmit (formulaire de contact)
+  - Vercel (hébergement)
+
+---
+
+## Fonctionnalités
+
+- Design responsive (mobile, tablette, desktop)
+- Section projets avec aperçus et liens cliquables
+- Formulaire de contact fonctionnel avec envoi vers mon email
+- Liens vers mes profils professionnels (LinkedIn, GitHub…)
+
+---
+
+## Améliorations prévues
+
+- Ajouter une animation lors du chargement
+- Intégrer mes prochains projets
+- Optimiser l’accessibilité et les performances
+- Ajouter une page blog ou projets
+
+---
+
+## Données personnelles
+
+Aucune donnée n'est stockée ou utilisée à des fins commerciales. Le formulaire envoie les messages directement à mon adresse via FormSubmit.
+
+## ⚙️ Installation locale (si besoin)
+
+```bash
+# Clone le repo
+git clone https://github.com/ton-utilisateur/portfolio.git
+
+# Installe les dépendances
+npm install
+
+# Lance le serveur local
+npm run dev

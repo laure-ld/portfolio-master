@@ -1,58 +1,57 @@
 @use './color' as *;
 
-/* ========== RESET STRUCTURE SLICK ========== */
 .slick-track {
   display: flex;
 }
 
-.slick-slide > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.slick-slide {
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 }
 
 
-/* ========== CONTAINER GÉNÉRAL ========== */
+/* Container principal */
 .slider-container {
   display: flex;
   flex-direction: column;
   overflow: overlay;
   margin: 0 auto;
   max-width: 1200px;
-}
 
+  .slick-slider {
+    transition: transform 0.3s ease;
 
-/* ========== SLIDER + CONTENU ========== */
-.slider-container .slick-slider {
-  transition: transform 0.3s ease;
-
-  div {
-    text-align: center;
-
-    h3 {
-      font-size: 1.2rem;
+    div {
       text-align: center;
-    }
 
-    img {
-      width: 60%;
-      height: 80%;
-      object-fit: cover;
-      border-radius: 8px;
-      margin: 2.5rem 0 1.2rem 0;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.5s ease;
-    }
+      h3 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
 
-    &:hover img {
-      transform: scale(1.05);
+      img {
+        width: 60%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 2.5rem 0 1.2rem 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
     }
   }
 }
 
 
-/* ========== FLÈCHES DE NAVIGATION ========== */
+/* Flèches de nav */
 .slick-prev,
 .slick-next {
   border: none;
@@ -69,14 +68,7 @@
   }
 }
 
-@media screen and (max-width: 400) {
-  .slick-prev,
-  .slick-next {
-    left: 0px;
-  }
-}
 
-/* ========== POINTS / BULLETS ========== */
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -94,8 +86,27 @@
       }
     }
 
-    &.slick-active button::before {
-      color: #000;
+    &.slick-active {
+      button::before {
+        color: #000;
+      }
     }
   }
 }
+
+/* Responsive */
+@media screen and (max-width: 400px) {
+  .slick-prev,
+  .slick-next {
+    left: 0;
+  }
+  .slider-container .slick-slider div {
+    img {
+      width: 75%;
+    }
+    h3 {
+      font-size: 0.8rem;
+    }
+  }
+}
+

@@ -1,7 +1,7 @@
 export default function ContactForm() {
     return (
       <form
-        action="https://formsubmit.co/laure_ld@outlook.fr"
+        action="https://formsubmit.co/laurelauda@gmail.com"
         method="POST"
         encType="multipart/form-data"
         className="contactForm"

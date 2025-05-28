@@ -52,7 +52,7 @@
       "titre": "Bot Telegram de veille technologique intelligent",
       "github": "https://github.com/laure-ld/bot_telegram.git",
       "objectif": "Développer un bot Telegram en Python pour automatiser la veille technologique via API et stockage PostgreSQL.",
-      "technologie": ["Python", "API", "PostgreSQL", "Flask", "Scheduler (Cron)", "Telegram Bot API"],
+      "technologie": ["Python", "API", "PostgreSQL", "Flask", "Scheduler"],
       "stack_affichage": "Python – Flask – API – PostgreSQL – Cron",
       "impact_utilisateur": "Les utilisateurs peuvent interagir avec le bot pour rechercher, sauvegarder ou supprimer des articles pertinents. Un résumé quotidien automatisé leur est envoyé, facilitant une veille technologique efficace sans effort.",
       "competences": [

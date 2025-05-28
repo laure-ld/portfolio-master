@@ -42,6 +42,7 @@
                 display: flex;
                 gap: 7px;
                 margin: 0;
+                white-space: nowrap;
                 li {
                     color: $text-color;
                     list-style: none;
@@ -118,15 +119,14 @@
     .projet {
         .projet-detail {
             flex-direction: column;
-            margin: 0;
             padding-top: 3rem;
-
+            margin: 0 32px;
             .mySecondSwiper {
             width: 200px;
             height: 200px;
             }
             .infoProjet {
-                padding: 50px 2rem 0;
+                width: 100%;
                 h2 {
                     font-size: 1.3rem;
                     text-align: center;

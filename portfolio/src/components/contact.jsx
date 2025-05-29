@@ -1,3 +1,5 @@
+import "../styles/main.scss";
+
 export default function ContactForm() {
     return (
       <form
@@ -5,6 +7,7 @@ export default function ContactForm() {
         method="POST"
         encType="multipart/form-data"
         className="contactForm"
+        id="contact"
       >
         <h3>Me contacter</h3>
   

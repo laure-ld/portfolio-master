@@ -20,6 +20,7 @@ $hover-color: darken($accent-color, 10%);
   }
 
 
+/* Element de base */
 body {
     background-color: $primary-color;
     color: $primary-color;
@@ -41,6 +42,7 @@ h2 {
     font-size: 2rem;
     font-weight: 500;
 }
+
 h3 {
     color: $text-color;
     margin: 0;
@@ -63,7 +65,7 @@ a, li {
     font-size: 20px ;
 }
 
-// responsive 
+/* responsive */
 
 @media screen and (max-width: 760px) {
     h1 {

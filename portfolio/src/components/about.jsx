@@ -1,4 +1,4 @@
-import '../styles/main.scss';
+import '../styles/about.scss';
 
 function About() {
     return (
@@ -12,9 +12,9 @@ function About() {
             </p>
             <div className='buttons'> 
                 <div className='button-container'>
-                    <a href="/CV.pdf" download className="download-btn">📄 Télécharger mon CV</a>
+                    <a href="/CV.pdf" download className="download-btn" aria-label="Télécharger mon CV (format PDF)">📄 Télécharger mon CV</a>
                 </div>
-                <a href="https://github.com/laure-ld" target="_blank" rel="noopener noreferrer" className="button-container">
+                <a href="https://github.com/laure-ld" target="_blank" rel="noopener noreferrer" className="button-container" aria-label="Lien github">
                     <img src="/images/github.png" alt="GitHub de Laure Loda"/>
                 </a>
             </div>   

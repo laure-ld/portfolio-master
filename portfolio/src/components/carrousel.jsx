@@ -7,7 +7,7 @@ import  { Link } from 'react-router-dom';
 function PrevArrow({ className, onClick }) {
   return (
     <div className={`${className} custom-arrow`} onClick={onClick}>
-      &#8592; {/* ← flèche gauche */}
+      &#8592;
     </div>
   );
 }
@@ -15,7 +15,7 @@ function PrevArrow({ className, onClick }) {
 function NextArrow({ className, onClick }) {
   return (
     <div className={`${className} custom-arrow`} onClick={onClick}>
-      &#8594; {/* → flèche droite */}
+      &#8594;
     </div>
   );
 }

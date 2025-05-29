@@ -11,9 +11,8 @@ const SlideContent = ({ slide }) => {
             onMouseEnter={() => setIsExpanded(false)}
             onMouseLeave={() => setIsExpanded(true)}
         >
-            
             <button  onClick={() => navigate(`/projets/${slide.id}`)} className="page-project">
-            <img src={slide.image} alt={slide.alt} className="slide-image"/>
+            <img src={slide.image} alt={slide.titre} className="slide-image"/>
                 <div className="slide-info">
                     <h3>{slide.name}</h3> - <p className="date">{slide.date}</p>
                     <p className="objectif">{slide.objectif}</p>

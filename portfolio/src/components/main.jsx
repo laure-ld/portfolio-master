@@ -5,6 +5,7 @@ import Carrousel from "./carrousel";
 import Skills from "./skills";
 import data from "../data/projects.json";
 import ContactForm from "./contact";
+import "../styles/main.scss";
 
 function Main() {
     const [isVisible, setIsVisible] = useState(false);

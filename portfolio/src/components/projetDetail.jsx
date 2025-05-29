@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import data from "../data/projects.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "../styles/projetDetail.scss";
@@ -56,7 +55,6 @@ const ProjetDetail = () => {
                     </div>
                 </div>
             </div>
-
             <div className="detailProjet">
                 <p>{projet.description}</p>
                 <p>{projet.retour_experience}</p>

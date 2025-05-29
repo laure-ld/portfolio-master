@@ -5,7 +5,7 @@ function Skills () {
         <div className="skill-container">
             <div className="skill" id="competence">
                 <h2>Mes compétences</h2>
-                <button onClick={() => window.open("https://miro.com/welcomeonboard/NHA4TFZvMnpUUHVZVDZmQlVBaUxQTW4vWGRKeGk3WUF3SkJkQU1IZjhPeDlLNTYvZzdEL09ja0FjeVowakVqUnpIVE9BYXR4VXd1Vkg5NXB2b3dqbHVnS0hST1l1TU0zdjlqNkhZUnFmOWF6emtZc1ZXd0VHMjlQK1VVSFQyamZnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=88976010551", "_blank")} className="cards-skills">Retrouvez ma carte mentale</button>
+                <button onClick={() => window.open("https://miro.com/welcomeonboard/NHA4TFZvMnpUUHVZVDZmQlVBaUxQTW4vWGRKeGk3WUF3SkJkQU1IZjhPeDlLNTYvZzdEL09ja0FjeVowakVqUnpIVE9BYXR4VXd1Vkg5NXB2b3dqbHVnS0hST1l1TU0zdjlqNkhZUnFmOWF6emtZc1ZXd0VHMjlQK1VVSFQyamZnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=88976010551", "_blank")} className="cards-skills" aria-label="Ouvrir la carte mentale dans un nouvel onglet">Retrouvez ma carte mentale</button>
                 <div className="schema-skills">
                     <img src="/images/graph.png" alt="Carte graphique des compétences techniques"/>
                 </div>
@@ -35,15 +35,15 @@ function Skills () {
                     <ul>
                         <li className="skill-circle">
                         <p>Typescript</p>
-                            <img src="/images/TS.svg" alt="typescript" className="learn-ts"/>
+                            <img src="/images/TS.svg" alt="logo de typescript" className="learn-ts"/>
                         </li>
                         <li className="skill-circle">
                             <p>Docker</p>
-                            <img src="/images/docker.svg" alt="Docker" className="learn-docker"/>
+                            <img src="/images/docker.svg" alt="logo de Docker" className="learn-docker"/>
                         </li>
                         <li className="skill-circle">
                         <p>FastAPI</p>
-                            <img src="/images/fastapi.png" alt="FastAPI" className="learn-fastapi"/>
+                            <img src="/images/fastapi.png" alt="logo de FastAPI" className="learn-fastapi"/>
                         </li>
                     </ul>
                 </div>

@@ -31,7 +31,7 @@ function Main() {
       };
 
     return( 
-        <section className="contenair-main">
+        <section className="container-main">
             <About />
             <Carrousel data={data}/>
             <Skills />

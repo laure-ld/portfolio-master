@@ -12,32 +12,32 @@ export default function ContactForm() {
         <h3>Me contacter</h3>
   
         <div className="mb-4">
-          <label>Prénom *</label>
-          <input type="text" name="prenom" required className="w-full p-2 border rounded" />
+          <label htmlFor="prenom">Prénom *</label>
+          <input id="prenom" type="text" name="prenom" required className="w-full p-2 border rounded" />
         </div>
   
         <div className="mb-4">
-          <label>Email *</label>
-          <input type="email" name="email" required className="w-full p-2 border rounded" />
+          <label htmlFor="email">Email *</label>
+          <input id="email" type="email" name="email" required className="w-full p-2 border rounded" />
         </div>
   
         <div className="mb-4">
-          <label>Message *</label>
-          <textarea name="message" required className="w-full p-2 border rounded" />
+          <label htmlFor="message">Message *</label>
+          <textarea id="message" name="message" required className="w-full p-2 border rounded" />
         </div>
   
         <div className="mb-4">
-          <label>Téléphone</label>
-          <input type="text" name="telephone" className="w-full p-2 border rounded" />
+          <label htmlFor="telephone">Téléphone</label>
+          <input id="telephone" type="text" name="telephone" className="w-full p-2 border rounded" />
         </div>
   
         <div className="mb-4">
-          <label>Pièce jointe</label>
-          <input type="file" name="fichier" className="w-full" />
+          <label htmlFor="piece-jointe">Pièce jointe</label>
+          <input id="piece-jointe" type="file" name="fichier" className="w-full" />
         </div>
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="https://portfolio-master-dun.vercel.app/" />
-        <button type="submit" className="buttonSubmit">Envoyer</button>
+        <button type="submit" className="buttonSubmit" aria-label="Envoyer le formulaire de contact">Envoyer</button>
       </form>
     );
   }

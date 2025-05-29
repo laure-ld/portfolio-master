@@ -27,7 +27,7 @@ function Header () {
                 </button>
             )}
             {showMenu && (
-            <nav id="menu" className={`menu ${isOpen ? 'open' : ''}`} onClick={handleOnClick} alt="menu deroulant">
+            <nav id="menu" className={`menu ${isOpen ? 'open' : ''}`} onClick={handleOnClick} aria-hidden={!isOpen} role="navigation">
                 <ul>
                     <li><a href="#carrousel">Projets</a></li>
                     <li><a href="#competence">Compétences</a></li>

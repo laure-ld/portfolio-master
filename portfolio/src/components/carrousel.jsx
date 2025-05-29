@@ -6,7 +6,7 @@ import  { Link } from 'react-router-dom';
 
 function PrevArrow({ className, onClick }) {
   return (
-    <div className={`${className} custom-arrow`} onClick={onClick}>
+    <div className={`${className} custom-arrow`} onClick={onClick} aria-label="Diapositive précédente">
       &#8592;
     </div>
   );
@@ -14,7 +14,7 @@ function PrevArrow({ className, onClick }) {
 
 function NextArrow({ className, onClick }) {
   return (
-    <div className={`${className} custom-arrow`} onClick={onClick}>
+    <div className={`${className} custom-arrow`} onClick={onClick} aria-label="Diapositive suivante">
       &#8594;
     </div>
   );

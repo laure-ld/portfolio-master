@@ -15,7 +15,7 @@ function Header () {
     return (
         <section className="container">
             <Link to="/main">
-                <img src="/images/logo.png" alt="logo" className="logo cursor-pointer"/>
+                <img src="/images/logo.webp" alt="logo" className="logo cursor-pointer"/>
             </Link>
             {showMenu && (
                 <button aria-expanded={isOpen} aria-controls="menu" onClick={handleOnClick} className="burger-btn">

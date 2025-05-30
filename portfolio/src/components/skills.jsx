@@ -7,7 +7,7 @@ function Skills () {
                 <h2>Mes compétences</h2>
                 <button onClick={() => window.open("https://miro.com/welcomeonboard/NHA4TFZvMnpUUHVZVDZmQlVBaUxQTW4vWGRKeGk3WUF3SkJkQU1IZjhPeDlLNTYvZzdEL09ja0FjeVowakVqUnpIVE9BYXR4VXd1Vkg5NXB2b3dqbHVnS0hST1l1TU0zdjlqNkhZUnFmOWF6emtZc1ZXd0VHMjlQK1VVSFQyamZnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=88976010551", "_blank")} className="cards-skills" aria-label="Ouvrir la carte mentale dans un nouvel onglet">Retrouvez ma carte mentale</button>
                 <div className="schema-skills">
-                    <img src="/images/graph.png" alt="Carte graphique des compétences techniques"/>
+                    <img src="/images/graph.webp" alt="Carte graphique des compétences techniques"/>
                 </div>
             </div>      
             <div className="softSkill" id="soft">
@@ -43,7 +43,7 @@ function Skills () {
                         </li>
                         <li className="skill-circle">
                         <p>FastAPI</p>
-                            <img src="/images/fastapi.png" alt="logo de FastAPI" className="learn-fastapi"/>
+                            <img src="/images/fastapi.webp" alt="logo de FastAPI" className="learn-fastapi"/>
                         </li>
                     </ul>
                 </div>

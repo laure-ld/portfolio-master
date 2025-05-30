@@ -1,8 +1,8 @@
 [
     {
       "id": 1,
-      "image": "/images/L-1.png",
-      "projet": ["/images/L-1.png", "/images/L-2.png", "/images/L-3.png", "/images/L-4.png"],
+      "image": "/images/L-1.webp",
+      "projet": ["/images/L-1.webp", "/images/L-2.webp", "/images/L-3.webp", "/images/L-4.webp"],
       "date": "Décembre 2024",
       "titre": "Back-end Express sécurisé pour une librairie en ligne",
       "github": "https://github.com/laure-ld/P7-Dev-Web-livres.git",
@@ -16,8 +16,8 @@
     },
     {
       "id": 2,
-      "image": "/images/K-1.png",
-      "projet": ["/images/K-1.png", "/images/K-2.png", "/images/K-3.png", "/images/K-4.png"],
+      "image": "/images/K-1.webp",
+      "projet": ["/images/K-1.webp", "/images/K-2.webp", "/images/K-3.webp", "/images/K-4.webp"],
       "date": "Novembre 2024",
       "titre": "Application immobilière responsive avec React",
       "github": "https://github.com/laure-ld/kasa.git",
@@ -31,8 +31,8 @@
     },
     {
       "id": 3,
-      "image": "/images/SB-1.png",
-      "projet": ["/images/SB-1.png", "/images/SB-2.png", "/images/SB-3.png", "/images/SB-4.png"],
+      "image": "/images/SB-1.webp",
+      "projet": ["/images/SB-1.webp", "/images/SB-2.webp", "/images/SB-3.webp", "/images/SB-4.webp"],
       "date": "Octobre 2024",
       "titre": "Site vitrine interactif avec JS Vanilla et API",
       "github": "https://github.com/laure-ld/Sophie-bluel.git",
@@ -46,7 +46,7 @@
     },
     {
       "id": 4,
-      "image": "/images/bot-0.png",
+      "image": "/images/bot-0.webp",
       "projet": ["/images/bot-1.webp", "/images/bot-2.webp", "/images/bot-3.webp", "/images/bot-4.webp"],
       "date": "Mai 2025",
       "titre": "Bot Telegram de veille technologique intelligent",

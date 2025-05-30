@@ -15,7 +15,7 @@ function About() {
                     <a href="/CV.pdf" download className="download-btn" aria-label="Télécharger mon CV (format PDF)">📄 Télécharger mon CV</a>
                 </div>
                 <a href="https://github.com/laure-ld" target="_blank" rel="noopener noreferrer" className="button-container" aria-label="GitHub de Laure Loda" title="Voir mon profil GitHub">
-                    <img src="/images/github.png" alt="GitHub de Laure Loda"/>
+                    <img src="/images/github.webp" alt="GitHub de Laure Loda"/>
                 </a>
             </div>   
         </div>

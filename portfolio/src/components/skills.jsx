@@ -35,11 +35,11 @@ function Skills () {
                     <ul>
                         <li className="skill-circle">
                         <p>Typescript</p>
-                            <img src="/images/TS.svg" alt="logo de typescript" className="learn-ts"/>
+                            <img src="/images/TS.webp" alt="logo de typescript" className="learn-ts"/>
                         </li>
                         <li className="skill-circle">
                             <p>Docker</p>
-                            <img src="/images/docker.svg" alt="logo de Docker" className="learn-docker"/>
+                            <img src="/images/docker.webp" alt="logo de Docker" className="learn-docker"/>
                         </li>
                         <li className="skill-circle">
                         <p>FastAPI</p>

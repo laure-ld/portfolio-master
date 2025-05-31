@@ -38,7 +38,7 @@ function Carrousels() {
         {data.map((project, index) => (
           <div key={index} className="slide">
             <Link to={`/projets/${project.id}`} title={`Voir le projet : ${project.titre}`}>
-              <img src={project.image} alt={`${project.titre} image`}/>
+              <img src={project.image} alt={`${project.titre} image`} loading="lazy"/>
               <h3>{project.titre}</h3>
             </Link>
           </div>

@@ -18,7 +18,7 @@ function Header () {
                 <img src="/images/logo.webp" alt="logo" className="logo cursor-pointer"/>
             </Link>
             {showMenu && (
-                <button aria-expanded={isOpen} aria-controls="menu" onClick={handleOnClick} className="burger-btn">
+                <button aria-expanded={isOpen} aria-controls="menu" aria-label="Bouton du menu" onClick={handleOnClick} className="burger-btn">
                         <svg  className='line' stroke="black" fill="none" strokeLinecap="round" height="28" width="28" xmlns="http://www.w3.org/2000/svg">
                             <line x1="4" y1="12" x2="25" y2="12" strokeWidth="2"/>
                             <line x1="4" y1="6" x2="25" y2="6" strokeWidth="2"/>

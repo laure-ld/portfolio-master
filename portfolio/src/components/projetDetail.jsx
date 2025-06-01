@@ -26,6 +26,7 @@ const ProjetDetail = () => {
                 >
                     {projet.projet.map((image, index) => (
                         <SwiperSlide key={index} className="swipperImg">
+                            <p className="indication">Faites Glisser les images</p>
                             <img src={image} alt={`${index + 1} du projet`}/>
                         </SwiperSlide>
                     ))}

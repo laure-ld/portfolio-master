@@ -6,43 +6,41 @@ import Skills from "./skills";
 import data from "../data/projects.json";
 import ContactForm from "./contact";
 import "../styles/main.scss";
+import { content } from '../../lang';
 
-function Main() {
-    const [isVisible, setIsVisible] = useState(false);
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 400) {
-              setIsVisible(true);
-            } else {
-              setIsVisible(false);
-            }
-          };
-        window.addEventListener('scroll', handleScroll)
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        };
-      }, []);
+function Main({ language }) {
+  const [isVisible, setIsVisible] = useState(false);
 
-      const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      };
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsVisible(window.scrollY > 400);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-    return( 
-        <section className="container-main">
-            <About />
-            <Carrousel data={data}/>
-            <Skills />
-            <ContactForm />
-            {isVisible && (
-                <button id="backToTop" className="back-to-top" aria-label="Retour en haut" onClick={scrollToTop}>
-                &#8593;
-                </button>
-            )}
-        </section>
-    )
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <section className="container-main">
+      <About text={content[language].about} />
+      <Carrousel data={data} language={language} />
+      <Skills text={content[language].competence}/>
+      <ContactForm  text={content[language].contact}/>
+      {isVisible && (
+        <button
+          id="backToTop"
+          className="back-to-top"
+          aria-label="Retour en haut"
+          onClick={scrollToTop}
+        >
+          ↑
+        </button>
+      )}
+    </section>
+  );
 }
 
 export default Main;

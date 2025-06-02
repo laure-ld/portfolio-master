@@ -1,67 +1,197 @@
 [
-    {
-      "id": 1,
-      "image": "/images/L-1.webp",
-      "projet": ["/images/L-1.webp", "/images/L-2.webp", "/images/L-3.webp", "/images/L-4.webp"],
-      "date": "Décembre 2024",
-      "titre": "Back-end Express sécurisé pour une librairie en ligne",
-      "github": "https://github.com/laure-ld/P7-Dev-Web-livres.git",
-      "objectif": "Mettre en place le Back-end d’un site de notation de livres pour une librairie.",
-      "technologie": ["React", "Express", "MongoDB", "Mongoose"],
-      "stack_affichage": "Express – MongoDB – Auth – MVC",
-      "impact_utilisateur": "Les utilisateurs peuvent noter des livres et consulter une moyenne calculée automatiquement.",
-      "competences": ["Adaptabilité face aux erreurs et aux contraintes du projet", "Résolution de problèmes"],
-      "description": "Développement du back-end d’un site de notation pour librairie, via une API Express connectée à MongoDB. Le projet inclut la gestion CRUD des livres et utilisateurs, la sécurité via authentification, ainsi que l’optimisation des images. L’architecture MVC et le respect des bonnes pratiques écologiques (Green Code) ont été appliqués.",
-      "retour_experience": "Ce projet m’a permis de bien consolider ma maîtrise du CRUD avec Mongoose et l’architecture Express. J’ai dû surmonter des difficultés liées à l'intégration front-end (incohérences de nom, ESLint). Aujourd’hui, je sécuriserais encore plus avec une validation de schémas type Yup, et implémenterais une auth OAuth."
+  {
+    "id": 1,
+    "image": "/images/L-1.webp",
+    "projet": ["/images/L-1.webp", "/images/L-2.webp", "/images/L-3.webp", "/images/L-4.webp"],
+    "github": "https://github.com/laure-ld/P7-Dev-Web-livres.git",
+    "technologie": ["React", "Express", "MongoDB", "Mongoose"],
+    "stack_affichage": "Express – MongoDB – Auth – MVC",
+    "date": {
+      "fr": "Décembre 2024",
+      "en": "December 2024"
     },
-    {
-      "id": 2,
-      "image": "/images/K-1.webp",
-      "projet": ["/images/K-1.webp", "/images/K-2.webp", "/images/K-3.webp", "/images/K-4.webp"],
-      "date": "Novembre 2024",
-      "titre": "Application immobilière responsive avec React",
-      "github": "https://github.com/laure-ld/kasa.git",
-      "objectif": "Implémenter le front-end d’une application avec React et React Router.",
-      "technologie": ["React", "React Router", "Node.js"],
-      "stack_affichage": "React – Vite – Routing",
-      "impact_utilisateur": "L’utilisateur navigue intuitivement entre les logements via une interface responsive.",
-      "competences": ["Gestion des composants et des états dans une application React", "Organisation et structuration du code"],
-      "description": "Front-end d’une application de location immobilière développée avec React et React Router. Objectif : offrir une navigation fluide et un affichage structuré des biens, en suivant une maquette précise. L’application a été configurée avec Vite pour des performances accrues et repose sur des données simulées.",
-      "retour_experience": "Ce projet a renforcé mes compétences en structuration de composants, gestion des routes, et configuration d’environnement React. Pour aller plus loin, j’ajouterais une logique de filtre dynamique et des animations CSS pour améliorer l’interactivité."
+    "titre": {
+      "fr": "Back-end Express sécurisé pour une librairie en ligne",
+      "en": "Secure Express Backend for an Online Bookstore"
     },
-    {
-      "id": 3,
-      "image": "/images/SB-1.webp",
-      "projet": ["/images/SB-1.webp", "/images/SB-2.webp", "/images/SB-3.webp", "/images/SB-5.webp"],
-      "date": "Octobre 2024",
-      "titre": "Site vitrine interactif avec JS Vanilla et API",
-      "github": "https://github.com/laure-ld/Sophie-bluel.git",
-      "objectif": "Créer une page web dynamique en JavaScript en interagissant avec une API.",
-      "technologie": ["JavaScript", "DOM", "API RESTful"],
-      "stack_affichage": "JS Vanilla – API – DOM",
-      "impact_utilisateur": "Les utilisateurs peuvent consulter les projets d’une architecte d’intérieur et uploader de nouveaux médias.",
-      "competences": ["Compréhension et manipulation du DOM", "Interaction avec une API et gestion des requêtes HTTP"],
-      "description": "J’ai développé la page web dynamique d’une architecte d’intérieur en JavaScript, en intégrant une API pour afficher ses travaux. J’ai manipulé le DOM pour gérer les interactions et créé une page de connexion avec une modale d’upload de médias, le tout codé from scratch.",
-      "retour_experience": "Ce projet m’a appris à gérer le JavaScript sans framework. La manipulation du DOM s’est faite naturellement, mais la gestion d’API m’a demandé plus de rigueur. Aujourd’hui, je miserais sur l’optimisation des médias (format WebP) et un meilleur SEO."
+    "objectif": {
+      "fr": "Mettre en place le Back-end d’un site de notation de livres pour une librairie.",
+      "en": "Set up the backend of a book rating site for a bookstore."
     },
-    {
-      "id": 4,
-      "image": "/images/bot-0.webp",
-      "projet": ["/images/bot-1.webp", "/images/bot-2.webp", "/images/bot-3.webp", "/images/bot-4.webp"],
-      "date": "Mai 2025",
-      "titre": "Bot Telegram de veille technologique intelligent",
-      "github": "https://github.com/laure-ld/bot_telegram.git",
-      "objectif": "Développer un bot Telegram en Python pour automatiser la veille technologique via API et stockage PostgreSQL.",
-      "technologie": ["Python", "API", "PostgreSQL", "Flask", "Scheduler"],
-      "stack_affichage": "Python – Flask – API – PostgreSQL – Cron",
-      "impact_utilisateur": "Les utilisateurs peuvent interagir avec le bot pour rechercher, sauvegarder ou supprimer des articles pertinents. Un résumé quotidien automatisé leur est envoyé, facilitant une veille technologique efficace sans effort.",
-      "competences": [
+    "impact_utilisateur": {
+      "fr": "Les utilisateurs peuvent noter des livres et consulter une moyenne calculée automatiquement.",
+      "en": "Users can rate books and see an automatically calculated average."
+    },
+    "competences": {
+      "fr": ["Adaptabilité face aux erreurs et aux contraintes du projet", "Résolution de problèmes"],
+      "en": ["Adaptability to errors and project constraints", "Problem solving"]
+    },
+    "description": {
+      "fr": "Développement du back-end d’un site de notation pour librairie, via une API Express connectée à MongoDB. Le projet inclut la gestion CRUD des livres et utilisateurs, la sécurité via authentification, ainsi que l’optimisation des images. L’architecture MVC et le respect des bonnes pratiques écologiques (Green Code) ont été appliqués.",
+      "en": "Backend development for a book rating site using an Express API connected to MongoDB. The project includes CRUD operations for books and users, authentication security, and image optimization. The MVC architecture and green coding best practices were applied."
+    },
+    "retour_experience": {
+      "fr": "Ce projet m’a permis de bien consolider ma maîtrise du CRUD avec Mongoose et l’architecture Express. J’ai dû surmonter des difficultés liées à l'intégration front-end (incohérences de nom, ESLint). Aujourd’hui, je sécuriserais encore plus avec une validation de schémas type Yup, et implémenterais une auth OAuth.",
+      "en": "This project helped consolidate my understanding of CRUD with Mongoose and Express architecture. I faced challenges related to front-end integration (naming mismatches, ESLint). Today, I would further enhance security with schema validation (e.g., Yup) and implement OAuth authentication."
+    }
+  },
+  {
+    "id": 2,
+    "image": "/images/K-1.webp",
+    "projet": [
+      "/images/K-1.webp",
+      "/images/K-2.webp",
+      "/images/K-3.webp",
+      "/images/K-4.webp"
+    ],
+    "date": {
+      "fr": "Novembre 2024",
+      "en": "November 2024"
+    },
+    "titre": {
+      "fr": "Application immobilière responsive avec React",
+      "en": "Responsive Real Estate App with React"
+    },
+    "github": "https://github.com/laure-ld/kasa.git",
+    "objectif": {
+      "fr": "Implémenter le front-end d’une application avec React et React Router.",
+      "en": "Implement the frontend of an application using React and React Router."
+    },
+    "technologie": [
+      "React",
+      "React Router",
+      "Node.js"
+    ],
+    "stack_affichage": "React – Vite – Routing",
+    "impact_utilisateur": {
+      "fr": "L’utilisateur navigue intuitivement entre les logements via une interface responsive.",
+      "en": "Users navigate intuitively between listings through a responsive interface."
+    },
+    "competences": {
+      "fr": [
+        "Gestion des composants et des états dans une application React",
+        "Organisation et structuration du code"
+      ],
+      "en": [
+        "Component and state management in a React app",
+        "Code organization and structuring"
+      ]
+    },
+    "description": {
+      "fr": "Front-end d’une application de location immobilière développée avec React et React Router. Objectif : offrir une navigation fluide et un affichage structuré des biens, en suivant une maquette précise. L’application a été configurée avec Vite pour des performances accrues et repose sur des données simulées.",
+      "en": "Frontend of a real estate rental application built with React and React Router. Goal: provide smooth navigation and structured display of listings, based on a precise design mockup. The app uses Vite for better performance and simulated data."
+    },
+    "retour_experience": {
+      "fr": "Ce projet a renforcé mes compétences en structuration de composants, gestion des routes, et configuration d’environnement React. Pour aller plus loin, j’ajouterais une logique de filtre dynamique et des animations CSS pour améliorer l’interactivité.",
+      "en": "This project strengthened my skills in component structure, routing, and React environment setup. To go further, I would add dynamic filtering and CSS animations to enhance interactivity."
+    }
+  },
+  {
+    "id": 3,
+    "image": "/images/SB-1.webp",
+    "projet": [
+      "/images/SB-1.webp",
+      "/images/SB-2.webp",
+      "/images/SB-3.webp",
+      "/images/SB-5.webp"
+    ],
+    "date": {
+      "fr": "Octobre 2024",
+      "en": "October 2024"
+    },
+    "titre": {
+      "fr": "Site vitrine interactif avec JS Vanilla et API",
+      "en": "Interactive Showcase Website with Vanilla JS and API"
+    },
+    "github": "https://github.com/laure-ld/Sophie-bluel.git",
+    "objectif": {
+      "fr": "Créer une page web dynamique en JavaScript en interagissant avec une API.",
+      "en": "Create a dynamic web page in JavaScript interacting with an API."
+    },
+    "technologie": [
+      "JavaScript",
+      "DOM",
+      "API RESTful"
+    ],
+    "stack_affichage": "JS Vanilla – API – DOM",
+    "impact_utilisateur": {
+      "fr": "Les utilisateurs peuvent consulter les projets d’une architecte d’intérieur et uploader de nouveaux médias.",
+      "en": "Users can browse an interior architect’s projects and upload new media."
+    },
+    "competences": {
+      "fr": [
+        "Compréhension et manipulation du DOM",
+        "Interaction avec une API et gestion des requêtes HTTP"
+      ],
+      "en": [
+        "DOM understanding and manipulation",
+        "Interacting with an API and handling HTTP requests"
+      ]
+    },
+    "description": {
+      "fr": "J’ai développé la page web dynamique d’une architecte d’intérieur en JavaScript, en intégrant une API pour afficher ses travaux. J’ai manipulé le DOM pour gérer les interactions et créé une page de connexion avec une modale d’upload de médias, le tout codé from scratch.",
+      "en": "I built a dynamic web page for an interior architect using JavaScript, integrating an API to display her work. I used DOM manipulation for interactions and created a login page with a media upload modal, all coded from scratch."
+    },
+    "retour_experience": {
+      "fr": "Ce projet m’a appris à gérer le JavaScript sans framework. La manipulation du DOM s’est faite naturellement, mais la gestion d’API m’a demandé plus de rigueur. Aujourd’hui, je miserais sur l’optimisation des médias (format WebP) et un meilleur SEO.",
+      "en": "This project taught me to manage JavaScript without a framework. DOM manipulation was natural, but API handling required more rigor. Today, I would focus on media optimization (WebP format) and better SEO."
+    }
+  },
+  {
+    "id": 4,
+    "image": "/images/bot-0.webp",
+    "projet": [
+      "/images/bot-1.webp",
+      "/images/bot-2.webp",
+      "/images/bot-3.webp",
+      "/images/bot-4.webp"
+    ],
+    "date": {
+      "fr": "Mai 2025",
+      "en": "May 2025"
+    },
+    "titre": {
+      "fr": "Bot Telegram de veille technologique intelligent",
+      "en": "Smart Tech Watch Telegram Bot"
+    },
+    "github": "https://github.com/laure-ld/bot_telegram.git",
+    "objectif": {
+      "fr": "Développer un bot Telegram en Python pour automatiser la veille technologique via API et stockage PostgreSQL.",
+      "en": "Develop a Telegram bot in Python to automate tech watch using APIs and PostgreSQL storage."
+    },
+    "technologie": [
+      "Python",
+      "API",
+      "PostgreSQL",
+      "Flask",
+      "Scheduler"
+    ],
+    "stack_affichage": "Python – Flask – API – PostgreSQL – Cron",
+    "impact_utilisateur": {
+      "fr": "Les utilisateurs peuvent interagir avec le bot pour rechercher, sauvegarder ou supprimer des articles pertinents. Un résumé quotidien automatisé leur est envoyé, facilitant une veille technologique efficace sans effort.",
+      "en": "Users interact with the bot to search, save or delete relevant articles. A daily automated summary is sent, making tech watch effortless."
+    },
+    "competences": {
+      "fr": [
         "Initiation de projet from scratch en Python",
         "Création et gestion d’une base de données PostgreSQL",
         "Utilisation d’API publiques et de web scraping",
         "Automatisation des tâches avec planification (cron)"
       ],
-      "description": "Ce bot Telegram facilite la veille technologique quotidienne. Il récupère des articles via API, permet leur sauvegarde dans une base PostgreSQL, et envoie un résumé chaque jour. L’interface Telegram permet une interaction simple (recherche, sauvegarde, suppression). Le projet a été pensé avec une logique modulaire, documenté sur Trello et développé en autonomie avec Flask.",
-      "retour_experience": "Ce projet m’a permis de sortir de ma zone de confort, d’apprendre Python en profondeur, de concevoir un système complet avec persistance des données, et de comprendre la planification de tâches asynchrones. J’ai apprécié la clarté de Python et la puissance de PostgreSQL. Aujourd’hui, je souhaite continuer à développer des outils utiles avec des stacks Python orientés production."
-    }    
-]  
+      "en": [
+        "Initiating a project from scratch in Python",
+        "Creating and managing a PostgreSQL database",
+        "Using public APIs and web scraping",
+        "Automating tasks with scheduling (cron)"
+      ]
+    },
+    "description": {
+      "fr": "Ce bot Telegram facilite la veille technologique quotidienne. Il récupère des articles via API, permet leur sauvegarde dans une base PostgreSQL, et envoie un résumé chaque jour. L’interface Telegram permet une interaction simple (recherche, sauvegarde, suppression). Le projet a été pensé avec une logique modulaire, documenté sur Trello et développé en autonomie avec Flask.",
+      "en": "This Telegram bot helps automate daily tech monitoring. It fetches articles via APIs, saves them to a PostgreSQL database, and sends a daily summary. The Telegram interface allows simple interactions (search, save, delete). The project follows a modular structure, was documented on Trello, and built independently with Flask."
+    },
+    "retour_experience": {
+      "fr": "Ce projet m’a permis de sortir de ma zone de confort, d’apprendre Python en profondeur, de concevoir un système complet avec persistance des données, et de comprendre la planification de tâches asynchrones. J’ai apprécié la clarté de Python et la puissance de PostgreSQL. Aujourd’hui, je souhaite continuer à développer des outils utiles avec des stacks Python orientés production.",
+      "en": "This project pushed me out of my comfort zone, deepened my Python knowledge, and taught me to build a full system with data persistence and async scheduling. I appreciated Python's clarity and PostgreSQL’s power. I now want to keep building useful tools with Python stacks fit for production."
+    }
+  }
+]

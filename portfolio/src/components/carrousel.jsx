@@ -20,7 +20,7 @@ function NextArrow({ className, onClick }) {
   );
 }
 
-function Carrousels() {
+function Carrousels({language}) {
   const settings = {
     className: "slider variable-width",
     infinite: true,
@@ -39,7 +39,7 @@ function Carrousels() {
           <div key={index} className="slide">
             <Link to={`/projets/${project.id}`} title={`Voir le projet : ${project.titre}`}>
               <img src={project.image} alt={`${project.titre} image`} loading="lazy"/>
-              <h3>{project.titre}</h3>
+              <h3>{project.titre[language]}</h3>
             </Link>
           </div>
         ))}

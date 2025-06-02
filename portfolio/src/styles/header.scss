@@ -7,18 +7,33 @@
     justify-content: space-between;
     font-size: 1.5rem;
 
-    .logo {
-      margin: 10px;
-      width: 90%;
-      height: 70px;
+    .logo-lang-container {
+      display: flex;
+      .logo {
+        margin: 10px;
+        width: 90%;
+        height: 70px;
+      }
+  
+      .switch {
+        background: transparent;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+      .switch:hover {
+        transform: scale(1.1);
+      }
     }
-
+    
     .menu {
       display: flex;
       align-items: center;
       justify-content: right;
       padding-right: 1.2rem;
       width: 100%;
+      
         ul {
           display: flex;
           gap: 2rem;

@@ -116,6 +116,7 @@
             padding-top: 100px;
             .schema-skills img {
                 width: 45%;
+                height: 45%;
                 }
         }
         .cards-skills {
@@ -206,6 +207,7 @@
             }
             .schema-skills img{
                 width: 65%;
+                height: 65%;
                 margin-top: 20px;
             }
         }
@@ -227,24 +229,38 @@
     }
     .learn-skills {
         align-items: center;
-        gap: 40px;
         ul {
             gap: 25px;
         }
         .skill-circle {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             font-size: 15px;
         }
     }
 }}
+@media screen and (max-width: 560px) {
+    .skill-container .learn-skills .skill-circle {
+        width: 120px;
+        height: 120px;
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
 @media screen and (max-width: 400px) {
     .skill-container {
         .softSkill {
             .learn-skills {
+                gap: 15px;
+                h2 {
+                   font-size: 1.5rem;
+                }
                 ul {
                     margin: 0;
                     margin-top: 0;
+                    gap: 10px;
                     li {
                         width: 85px;
                         height: 85px;

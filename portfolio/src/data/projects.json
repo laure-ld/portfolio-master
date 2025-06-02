@@ -32,7 +32,7 @@
     {
       "id": 3,
       "image": "/images/SB-1.webp",
-      "projet": ["/images/SB-1.webp", "/images/SB-2.webp", "/images/SB-3.webp", "/images/SB-4.webp"],
+      "projet": ["/images/SB-1.webp", "/images/SB-2.webp", "/images/SB-3.webp", "/images/SB-5.webp"],
       "date": "Octobre 2024",
       "titre": "Site vitrine interactif avec JS Vanilla et API",
       "github": "https://github.com/laure-ld/Sophie-bluel.git",
